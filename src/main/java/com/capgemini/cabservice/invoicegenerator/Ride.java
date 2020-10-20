@@ -2,11 +2,13 @@ package com.capgemini.cabservice.invoicegenerator;
 
 public class Ride {
 	
-	 public double distance;
-	    public double time;
+	public double distance;
+	public double time;
+	public RideCategory rideCategory;
 
-	    public Ride(double distance, int time) {
-	        this.distance = distance;
-	        this.time = time;
-	    }
+	public Ride(double distance, int time, RideCategory rideCategory) {
+		this.distance = distance;
+		this.time = time;
+		this.rideCategory = rideCategory;
+	}
 }
