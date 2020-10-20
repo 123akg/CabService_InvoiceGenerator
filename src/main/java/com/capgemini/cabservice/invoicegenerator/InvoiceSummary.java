@@ -3,6 +3,7 @@ package com.capgemini.cabservice.invoicegenerator;
 import java.util.Objects;
 
 public class InvoiceSummary {
+
 	public int totalFare;
 	public int noOfRides;
 	public double average;
@@ -22,5 +23,4 @@ public class InvoiceSummary {
 		InvoiceSummary that = (InvoiceSummary) o;
 		return totalFare == that.totalFare && noOfRides == that.noOfRides && Double.compare(that.average, average) == 0;
 	}
-
 }
